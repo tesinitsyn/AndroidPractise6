@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph.xml"
+    app:startDestination="@id/chooseRole">
+
+    <fragment
+        android:id="@+id/chooseRole"
+        android:name="com.example.androidpractise5.ChooseRole"
+        android:label="fragment_choose_role"
+        tools:layout="@layout/fragment_choose_role" >
+        <action
+            android:id="@+id/action_chooseRole_to_registration"
+            app:destination="@id/registration" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.androidpractise5.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_registration"
+            app:destination="@id/registration" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.example.androidpractise5.Registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registration_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+</navigation>
