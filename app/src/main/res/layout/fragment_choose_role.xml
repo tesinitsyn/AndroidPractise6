@@ -10,6 +10,17 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/notificationButton"
+            android:layout_width="154dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="180dp"
+            android:text="@string/notification_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="138dp"
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/coach_button"
             android:layout_width="115dp"
